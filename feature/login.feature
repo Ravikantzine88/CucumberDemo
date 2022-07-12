@@ -5,4 +5,6 @@ Scenario: to check login with correct credential
 Given opne chrome browser homepage url
 When enter username and password
 Then click on submit button
-
+Given click on leave button
+And click on check point
+And click on past Empolyee

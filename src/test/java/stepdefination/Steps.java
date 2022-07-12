@@ -8,19 +8,24 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.PendingException;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import leaveclass.LeavePage;
 import pageclasses.LoginPage;
 
 public class Steps {
 	WebDriver driver;
 	LoginPage loginPage;
+	LeavePage leave;
+	
+	
 
 	@Before
 	public void setup() {
 		String chromedriver = "webdriver.chrome.driver";
-		String driverLocation = "C:\\Users\\ravik\\eclipse-workspace\\cucumberDemo\\chromeDriver\\chromedriver.exe";
+		String driverLocation = "C:\\Users\\Amol\\Desktop\\dkamol\\CucumberDemo\\chromeDriver\\chromedriver.exe";
 		// Initialize the webdriver and open the browser
 
 		System.setProperty(chromedriver, driverLocation);
@@ -55,11 +60,31 @@ public class Steps {
 		loginPage.getClickButton().click();
 
 	}
-
-	@After
+	 @Given("^click on leave button$")
+	    public void click_on_leave_button() throws Throwable {
+	      Thread.sleep(3000);
+	      leave=new LeavePage(driver);
+	      leave.getLeaveclick().click();
+	        }
+	 @And("^click on check point$")
+	    public void click_on_check_point() throws Throwable {
+	    	 Thread.sleep(3000);
+	    	 leave.getCheckpoint().click();
+	 }
+	    
+	 @And("^click on past Empolyee$")
+	    public void click_on_past_empolyee() throws Throwable {
+	        Thread.sleep(3000);
+	        leave.getPast().click();
+	    }
+	
+	    
+	 
+	 
+/*	@After
 	public void close() throws Throwable {
 		Thread.sleep(5000);
 		// Close the browser
 		driver.close();
-	}
+	}*/
 }

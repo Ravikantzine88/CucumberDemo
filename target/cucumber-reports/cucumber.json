@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-07-12T04:14:51.379Z",
+        "start_timestamp": "2022-07-12T11:16:22.131Z",
         "before": [
           {
             "result": {
-              "duration": 6045642300,
+              "duration": 11296483600,
               "status": "passed"
             },
             "match": {
@@ -19,23 +19,12 @@
         "name": "to check login with correct credential",
         "description": "",
         "id": "to-verify-login-page-functional-testing;to-check-login-with-correct-credential",
-        "after": [
-          {
-            "result": {
-              "duration": 5093533800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefination.Steps.close()"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1002000,
+              "duration": 2999400,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 6280765500,
+              "duration": 6364700600,
               "status": "passed"
             },
             "line": 6,
@@ -59,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 6984505000,
+              "duration": 5300162300,
               "status": "passed"
             },
             "line": 7,
@@ -68,6 +57,43 @@
               "location": "stepdefination.Steps.click_on_submit_button()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //*[text()\u003d\u0027Leave\u0027]\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.1.2\u0027, revision: \u00279a5a329c5a\u0027\nSystem info: host: \u0027DESKTOP-DHA2IG9\u0027, ip: \u0027192.168.241.46\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002718.0.1\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)\r\n\tat stepdefination.Steps.click_on_leave_button(Steps.java:67)\r\n\tat ✽.click on leave button(file:///C:/Users/Amol/Desktop/dkamol/CucumberDemo/feature/login.feature:8)\r\n",
+              "duration": 4321513300,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "click on leave button",
+            "match": {
+              "location": "stepdefination.Steps.click_on_leave_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 998800,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "click on check point",
+            "match": {
+              "location": "stepdefination.Steps.click_on_check_point()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999800,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "click on past Empolyee",
+            "match": {
+              "location": "stepdefination.Steps.click_on_past_empolyee()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [

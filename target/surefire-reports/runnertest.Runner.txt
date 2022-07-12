@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: runnertest.Runner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.237 s - in runnertest.Runner
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 29.965 s <<< FAILURE! - in runnertest.Runner
+to check login with correct credential(to verify login page functional testing)  Time elapsed: 28.145 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+Unable to find element with locator By.xpath: //*[text()='Leave']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DESKTOP-DHA2IG9', ip: '192.168.241.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
+Driver info: driver.version: RemoteWebDriver
+
