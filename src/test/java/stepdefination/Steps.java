@@ -5,22 +5,25 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import dashboardclass.LeavePage;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.PendingException;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageclasses.LoginPage;
 
-public class Steps {
+public class Steps{
 	WebDriver driver;
 	LoginPage loginPage;
+	LeavePage leavePage;
 
 	@Before
 	public void setup() {
 		String chromedriver = "webdriver.chrome.driver";
-		String driverLocation = "C:\\Users\\ravik\\eclipse-workspace\\cucumberDemo\\chromeDriver\\chromedriver.exe";
+		String driverLocation = "C:\\Users\\kshir\\OneDrive\\Desktop\\cucumber\\CucumberDemo\\chromedriver\\chromedriver.exe";
 		// Initialize the webdriver and open the browser
 
 		System.setProperty(chromedriver, driverLocation);
@@ -47,6 +50,7 @@ public class Steps {
 		Thread.sleep(3000);
 		loginPage.getPassWord().sendKeys("admin123");
 
+		
 	}
 
 	@Then("^click on submit button$")
@@ -55,11 +59,32 @@ public class Steps {
 		loginPage.getClickButton().click();
 
 	}
-
-	@After
-	public void close() throws Throwable {
-		Thread.sleep(5000);
-		// Close the browser
-		driver.close();
+	
+	@Given("^click on Leave button$")
+    public void click_on_leave_button() throws Throwable {
+		   	leavePage =new LeavePage(driver);
+		   	Thread.sleep(3000);
+		leavePage.getleaveclick().click();
+        
 	}
-}
+	@And("^click on check point$")
+    public void click_on_check_point() throws Throwable {
+       
+       leavePage.getCheckpoint().click();
+	}
+	
+       @And("^click on past employee$")
+       public void click_on_past_employee() throws Throwable {
+    	   Thread.sleep(3000);
+           leavePage.getPast().click();
+
+	}
+    
+/*	@After
+	public void close() {
+		driver.close();
+	}*/
+	
+}	
+
+	
