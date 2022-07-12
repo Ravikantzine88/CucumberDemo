@@ -1,0 +1,87 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-12T04:14:51.379Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6045642300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefination.Steps.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "to check login with correct credential",
+        "description": "",
+        "id": "to-verify-login-page-functional-testing;to-check-login-with-correct-credential",
+        "after": [
+          {
+            "result": {
+              "duration": 5093533800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefination.Steps.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1002000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "opne chrome browser homepage url",
+            "match": {
+              "location": "stepdefination.Steps.opne_chrome_browser_homepage_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6280765500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enter username and password",
+            "match": {
+              "location": "stepdefination.Steps.enter_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6984505000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click on submit button",
+            "match": {
+              "location": "stepdefination.Steps.click_on_submit_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regration"
+          }
+        ]
+      }
+    ],
+    "name": "to verify login page functional testing",
+    "description": "",
+    "id": "to-verify-login-page-functional-testing",
+    "keyword": "Feature",
+    "uri": "file:feature/login.feature",
+    "tags": []
+  }
+]
