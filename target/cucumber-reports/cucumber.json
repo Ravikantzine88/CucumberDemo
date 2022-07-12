@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-07-12T04:14:51.379Z",
+        "start_timestamp": "2022-07-12T10:16:48.936Z",
         "before": [
           {
             "result": {
-              "duration": 6045642300,
+              "duration": 10276116300,
               "status": "passed"
             },
             "match": {
@@ -19,23 +19,12 @@
         "name": "to check login with correct credential",
         "description": "",
         "id": "to-verify-login-page-functional-testing;to-check-login-with-correct-credential",
-        "after": [
-          {
-            "result": {
-              "duration": 5093533800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefination.Steps.close()"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1002000,
+              "duration": 1013400,
               "status": "passed"
             },
             "line": 5,
@@ -47,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 6280765500,
+              "duration": 6220114000,
               "status": "passed"
             },
             "line": 6,
@@ -59,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 6984505000,
+              "duration": 9456563400,
               "status": "passed"
             },
             "line": 7,
@@ -68,6 +57,42 @@
               "location": "stepdefination.Steps.click_on_submit_button()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7636322000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click on Leave button",
+            "match": {
+              "location": "stepdefination.Steps.click_on_leave_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 137237600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "click on check point",
+            "match": {
+              "location": "stepdefination.Steps.click_on_check_point()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3113696700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click on past employee",
+            "match": {
+              "location": "stepdefination.Steps.click_on_past_employee()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
