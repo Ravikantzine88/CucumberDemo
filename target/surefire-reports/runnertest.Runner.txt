@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: runnertest.Runner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 37.587 s - in runnertest.Runner
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.271 s <<< FAILURE! - in runnertest.Runner
+to check login with correct credential(to verify login page functional testing)  Time elapsed: 0.357 s  <<< ERROR!
+java.lang.IllegalStateException: The driver executable must exist: C:\Users\kshir\OneDrive\Desktop\cucumber\CucumberDemo\chromedriver\chromedriver.exe
+
