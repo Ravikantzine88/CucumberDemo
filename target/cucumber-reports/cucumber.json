@@ -3,12 +3,13 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2022-07-12T10:16:48.936Z",
+        "start_timestamp": "2022-07-14T16:44:40.300Z",
         "before": [
           {
             "result": {
-              "duration": 10276116300,
-              "status": "passed"
+              "error_message": "java.lang.IllegalStateException: The driver executable must exist: C:\\Users\\kshir\\OneDrive\\Desktop\\cucumber\\CucumberDemo\\chromedriver\\chromedriver.exe\r\n\tat org.openqa.selenium.internal.Require$FileStateChecker.isFile(Require.java:342)\r\n\tat org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:147)\r\n\tat org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:38)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:231)\r\n\tat org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:437)\r\n\tat org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:127)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:48)\r\n\tat stepdefination.Steps.setup(Steps.java:30)\r\n",
+              "duration": 48551900,
+              "status": "failed"
             },
             "match": {
               "location": "stepdefination.Steps.setup()"
@@ -24,8 +25,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1013400,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 5,
             "name": "opne chrome browser homepage url",
@@ -36,8 +36,7 @@
           },
           {
             "result": {
-              "duration": 6220114000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 6,
             "name": "enter username and password",
@@ -48,8 +47,8 @@
           },
           {
             "result": {
-              "duration": 9456563400,
-              "status": "passed"
+              "duration": 1022900,
+              "status": "skipped"
             },
             "line": 7,
             "name": "click on submit button",
@@ -60,8 +59,7 @@
           },
           {
             "result": {
-              "duration": 7636322000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "click on Leave button",
@@ -72,8 +70,7 @@
           },
           {
             "result": {
-              "duration": 137237600,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 9,
             "name": "click on check point",
@@ -84,8 +81,8 @@
           },
           {
             "result": {
-              "duration": 3113696700,
-              "status": "passed"
+              "duration": 1002300,
+              "status": "skipped"
             },
             "line": 10,
             "name": "click on past employee",
